@@ -1,3 +1,16 @@
 import React from 'react';
 
-export default () => <h1>Hi, I'm Pete</h1>;
+import Header from './header';
+import Intro from '../containers/intro'
+import Showcase from '../containers/showcase';
+
+
+export default () => {
+  return (
+    <div>
+      <Header />
+      <Intro />
+      <Showcase />
+    </div>
+  )
+};
