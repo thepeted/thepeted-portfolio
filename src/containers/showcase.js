@@ -19,7 +19,7 @@ export default class Showcase extends Component {
       <div>
         {this.state.showcases.map((showcase, i) => {
           let content = null;
-          const IdName = showcase.title.replace(/\s/g, '-');
+          const idName = showcase.title.replace(/\s/g, '-');
           if (this.state.activeIdx === i) {
             content = (
               <div className="main">
@@ -29,8 +29,8 @@ export default class Showcase extends Component {
             )
           }
           return (
-            <div className="showcase" id={IdName} key={i}>
-              <a href={`#${IdName}`}>
+            <div className="showcase" id={idName} key={i}>
+              <a href={`#${idName}`}>
                 <h2 onClick={() => this.handleClick(i) }>
                 {showcase.title}
                 </h2>
