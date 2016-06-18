@@ -31,7 +31,10 @@ export default class Showcase extends Component {
           return (
             <div className="showcase" id={idName} key={i}>
               <a href={`#${idName}`}>
-                <h2 onClick={() => this.handleClick(i) }>
+                <h2
+                  onClick={() => this.handleClick(i)}
+                  className={this.state.activeIdx === i ? 'active': ''}
+                  >
                 {showcase.title}
                 </h2>
               </a>
