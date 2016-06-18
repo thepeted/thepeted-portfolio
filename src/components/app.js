@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Footer from './footer';
 import Header from './header';
 import Intro from '../containers/intro';
 import Outro from '../containers/outro';
@@ -13,6 +14,7 @@ export default () => {
       <Intro />
       <Showcase />
       <Outro />
+      <Footer />
     </div>
   )
 };

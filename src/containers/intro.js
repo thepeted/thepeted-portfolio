@@ -13,7 +13,7 @@ export default class extends Component {
       height: window.innerHeight + 'px'
     });
   }
-  componentWillMount(){
+  componentWillUnMount(){
     window.removeEventListener('resize', this.handleResize);
   }
   componentDidMount(){
@@ -24,7 +24,7 @@ export default class extends Component {
   }
   render(){
     const divStyle = {
-      height: window.innerHeight
+      height: this.state.height
     }
     return (
       <div className="content intro" style={divStyle}>
