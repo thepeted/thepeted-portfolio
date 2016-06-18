@@ -27,11 +27,11 @@ export default class extends Component {
       height: window.innerHeight
     }
     return (
-      <div className="content intro" style={divStyle}>
+      <div className="content outro" id="Get-In-Touch" style={divStyle}>
         <div>
-          <h1>Hello. My name is Peter Daily and I'm a new web developer.</h1>
-          <p>A succesful Business Analyst and Operational Manager, I've recently found a passion for front end web development.</p>
-          <p>Scroll down to see what I've been up to!</p>
+          <h1>Like what you see? Keep in touch!</h1>
+
+          <p>Social buttons here</p>
         </div>
       </div>
     );

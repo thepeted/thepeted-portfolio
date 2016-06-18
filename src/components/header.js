@@ -6,7 +6,7 @@ export default () => {
   return (
     <header>
       <div className="nav">
-        <Button title="Get in touch" url="#"/>
+        <Button title="Get in touch" url="#Get-In-Touch"/>
       </div>
     </header>
   )
