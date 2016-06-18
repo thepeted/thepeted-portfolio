@@ -14,10 +14,14 @@ export default class extends Component {
     });
   }
   componentWillUnMount(){
-    window.removeEventListener('resize', this.handleResize);
+    if (window.innerWidth >= 600 ) {
+      window.removeEventListener('resize', this.handleResize);
+    }
   }
   componentDidMount(){
-    window.addEventListener('resize', this.handleResize);
+    if (window.innerWidth >= 600 ) {
+      window.addEventListener('resize', this.handleResize);
+    }
   }
   handleResize(e){
     this.setState({height: e.target.innerHeight});

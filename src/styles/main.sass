@@ -13,7 +13,6 @@ a
   display: inline-block
   margin-right: 0.4em
   padding: 0.3em 0.7em
-  font-size: 1em
   font-weight: 400
   line-height: 1.5em
   background: $main
@@ -86,3 +85,24 @@ header
 footer
   text-align: center
   color: #aaa
+
+
+@media(max-width: 600px)
+  header
+    display: none
+  footer
+    font-size: 0.8em
+  .content
+    font-size: 1em
+  .social
+    i
+      font-size: 3em
+
+@media(max-width: 800px)
+  .showcase
+    .main
+      flex-direction: column
+    .codepen
+      width: 100%
+    .description
+      width: 100%
