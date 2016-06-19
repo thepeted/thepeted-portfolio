@@ -38,7 +38,7 @@ export default class extends Component {
     return (
       <div className="content outro" id="Get-In-Touch" style={divStyle}>
         <div>
-          <h2>Like what you see? Get in touch!</h2>
+          <h2>Thanks for stopping by. Keep in touch!</h2>
           <div className="social">
             {
               data.map((social, i) => {
