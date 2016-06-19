@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 
+import Button from '../components/button'
+
 export default class extends Component {
   constructor(){
     super();
@@ -34,8 +36,11 @@ export default class extends Component {
       <div className="content intro" style={divStyle}>
         <div>
           <h1>Hello. My name is Peter Daily and I'm a new web developer.</h1>
-          <p>A succesful Business Analyst and Operational Manager, I've recently found a passion for front end web development.</p>
-          <p>Scroll down to see what I've been up to!</p>
+          <p>I've recently found a passion for front end web development. I'm learning HTML5, CSS3 and JavaScript by making single page web apps.</p>
+          <p>
+            Here are some of my favourite creations (so far..) <Button title="Go" url="#work" />
+          </p>
+
         </div>
       </div>
     );

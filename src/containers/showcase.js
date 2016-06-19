@@ -16,7 +16,7 @@ export default class Showcase extends Component {
   }
   render() {
     return (
-      <div>
+      <div id="work">
         {this.state.showcases.map((showcase, i) => {
           let content = null;
           const idName = showcase.title.replace(/\s/g, '-');
