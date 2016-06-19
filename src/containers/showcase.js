@@ -22,14 +22,18 @@ export default class Showcase extends Component {
           const idName = showcase.title.replace(/\s/g, '-');
           if (this.state.activeIdx === i) {
             content = (
-              <div className="main">
+              <div className='main'>
                 <Codepen hash={showcase.hash} height={showcase.height}/>
                 <Description content={showcase.description} />
               </div>
             )
           }
           return (
-            <div className="showcase" id={idName} key={i}>
+            <div
+              className={showcase.fullWidth ? 'showcase full-width' : 'showcase'}
+              id={idName}
+              key={i}
+              >
               <a href={`#${idName}`}>
                 <h2
                   onClick={() => this.handleClick(i)}
