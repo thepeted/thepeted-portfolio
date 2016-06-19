@@ -4,8 +4,8 @@ export default ({hash, height}) => {
   return (
     <div className="codepen">
       <iframe
-        id="cp_embed_aNrdzP"
-        src={`//codepen.io/thepeted/embed/${hash}?height=${height}&amp;theme-id=dark&amp;slug-hash=aNrdzP&amp;default-tab=result&amp;user=thepeted&amp;embed-version=2`}
+        id={`cp_embed_${hash}`}
+        src={`//codepen.io/thepeted/embed/${hash}?height=${height}&amp;theme-id=dark&amp;slug-hash=${hash}&amp;default-tab=result&amp;user=thepeted&amp;embed-version=2`}
         scrolling="no"
         frameborder="0"
         height={height}
