@@ -29,7 +29,8 @@ const common = {
     // link tags for any required assets
     new HtmlWebPackPlugin({
       title: 'react-babel-sass-starter',
-      template: 'html!./src/templates/index.html'
+      template: 'html!./src/templates/index.html',
+      favicon: 'src/images/favicon.ico'
     })
   ],
   module: {
