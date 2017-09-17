@@ -13,7 +13,7 @@ export default () => {
   };
   return (
     <footer style={footerStyle}>
-      <p style={pStyle}> {'\u00a9'} Peter Daily 2016. View the source on <a href="https://github.com/thepeted/thepeted-portfolio">Github.</a></p>
+      <p style={pStyle}> {'\u00a9'} Peter Daily {(new Date()).getFullYear()}. View the source on <a href="https://github.com/thepeted/thepeted-portfolio">Github.</a></p>
     </footer>
   )
 }
