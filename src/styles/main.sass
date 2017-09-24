@@ -20,7 +20,6 @@ p
 
 .button
   display: inline-block
-  margin-right: 0.4em
   padding: 0.3em 0.7em
   font-weight: 400
   line-height: 1.5em
@@ -32,16 +31,24 @@ p
     background: $highlight
   a
     color: #fff
-
+  
+.button + .button
+  margin-left: 0.4em
+  
 header
   position: fixed
   top: 0px
-  right: 2em
+  width: 100%
   height: 4.5em
-  text-align: right
   margin-top: 1.1em
   margin-bottom: 1em
 
+.nav
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin: 0 2em
+  
 .content
   display: flex
   align-items: center
@@ -54,25 +61,37 @@ header
   .button
     font-size: 0.8em
 
+.home-link
+  transition: all 0.3s
+  &.hidden
+    opacity: 0
+    visibility: all 0.25s ease-in
+    pointer-events: none;
+
+.showcase-header
+  display: block
+  line-height: 72px
+  text-align: center
+  width: 100%
+  cursor: pointer
+  transition: all 0.25s ease-in
+  &:hover
+    background: $main
+  &.active
+    background: $main
+    h2
+      color: #fff   
+  h2
+    color: #434d56
+  
 .showcase
   margin: 0 auto
   width: 100%
   h2
-    color: #434d56
-    height: 3em
-    line-height: 3em
     margin: 0
-    width: 100%
-    text-align: center
-    cursor: pointer
     transition: all 0.25s ease-in
-
     &:hover
-      background: $main
       color: #fff
-  h2.active
-    background: $main
-    color: #fff
   .main
     display: flex
     justify-content: space-between

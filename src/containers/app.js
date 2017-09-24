@@ -13,7 +13,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      height: window.innerHeight
+      height: window.innerHeight,
+      showHomeButton: false,
     }
 
     this.handleResize = this.handleResize.bind(this)
@@ -23,6 +24,18 @@ class App extends Component {
     if (window.innerWidth >= 600 ) {
       window.addEventListener('resize', throttle(this.handleResize, 16, false));
     }
+    window.addEventListener('scroll', () => {      
+      if (window.pageYOffset >= 100) {
+        if (!this.state.showHomeButton) {
+          this.setState({ showHomeButton: true });
+        }
+      }
+      if (window.pageYOffset < 100) {
+        if (this.state.showHomeButton) {
+          this.setState({ showHomeButton: false });
+        }
+      }
+    });
   }
 
   componentWillUnMount(){
@@ -38,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header showHomeButton={this.state.showHomeButton}/>
         <Intro height={this.state.height} />
         <Showcase />
         <Outro height={this.state.height} />

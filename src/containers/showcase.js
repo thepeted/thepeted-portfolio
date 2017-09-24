@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
 import data from '../data/showcase-data';
+import scrollToElement from 'scroll-to-element'
+
+import { SCROLL_SPEED } from '../constants/constants'
 
 import Codepen from '../components/codepen';
 import Description from '../components/description';
@@ -34,11 +37,8 @@ export default class Showcase extends Component {
               id={idName}
               key={i}
               >
-              <a href={`#${idName}`}>
-                <h2
-                  onClick={() => this.handleClick(i)}
-                  className={this.state.activeIdx === i ? 'active': ''}
-                  >
+              <a href={`#${idName}`} className={this.state.activeIdx === i ? 'showcase-header active': 'showcase-header'}>
+                <h2 onClick={() => this.handleClick(i)}>
                 {showcase.title}
                 </h2>
               </a>
@@ -57,7 +57,7 @@ export default class Showcase extends Component {
     } else {
       this.setState({
         activeIdx: i
-      });
+      })
     }
   }
 }

@@ -1,17 +1,32 @@
 import React from 'react';
 
+import classNames from 'classnames'
 import scrollToElement from 'scroll-to-element'
 
-export default () => {
+import { SCROLL_SPEED } from '../constants/constants'
+
+export default ({ showHomeButton }) => {
+  const homeButtonClassNames = classNames('button', 'home-link', { hidden: !showHomeButton })  
   return (
     <header>
-      <div className="nav">
-        <span className="button">
-          <a href='//drive.google.com/file/d/0B6imXc7m6sp6RGwzY1FudXJjXzg/view?usp=sharing'>CV</a>
+      <div className='nav'>
+        <span 
+          className={homeButtonClassNames}
+          onClick={() => scrollToElement('.container', { duration: SCROLL_SPEED })}
+          >
+          <i className="fa fa-lg fa-home" aria-hidden="true"></i>
         </span>
-        <span className='button' onClick={()=> scrollToElement('#Get-In-Touch', { duration: 300 })}>
-          Contact Me
-        </span>
+        <div>
+          <span className="button">
+            <a href='//drive.google.com/file/d/0B6imXc7m6sp6RGwzY1FudXJjXzg/view?usp=sharing'>CV</a>
+          </span>
+          <span 
+            className='button' 
+            onClick={()=> scrollToElement('#Get-In-Touch', { duration: SCROLL_SPEED })}
+            >
+            Contact Me
+          </span>
+        </div>
       </div>
     </header>
   )
