@@ -1,13 +1,17 @@
 import React from 'react';
 
-import Button from './button';
+import scrollToElement from 'scroll-to-element'
 
 export default () => {
   return (
     <header>
       <div className="nav">
-        <Button title="CV" url="//drive.google.com/file/d/0B6imXc7m6sp6RGwzY1FudXJjXzg/view?usp=sharing" />
-        <Button title="Contact me" url="#Get-In-Touch" />
+        <span className="button">
+          <a href='//drive.google.com/file/d/0B6imXc7m6sp6RGwzY1FudXJjXzg/view?usp=sharing'>CV</a>
+        </span>
+        <span className='button' onClick={()=> scrollToElement('#Get-In-Touch', { duration: 300 })}>
+          Contact Me
+        </span>
       </div>
     </header>
   )
