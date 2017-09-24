@@ -24,7 +24,7 @@ class App extends Component {
     if (window.innerWidth >= 600 ) {
       window.addEventListener('resize', throttle(this.handleResize, 16, false));
     }
-    window.addEventListener('scroll', () => {      
+    window.addEventListener('scroll', throttle(() => {      
       if (window.pageYOffset >= 100) {
         if (!this.state.showHomeButton) {
           this.setState({ showHomeButton: true });
@@ -35,7 +35,7 @@ class App extends Component {
           this.setState({ showHomeButton: false });
         }
       }
-    });
+    }, 16, false));
   }
 
   componentWillUnMount(){
