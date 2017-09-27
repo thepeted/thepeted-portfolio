@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 import throttle from 'lodash.throttle';
 
-import Footer from '../components/footer';
 import Header from '../components/header';
 import Intro from '../components/intro';
 import Outro from '../components/outro';
 import Showcase from './showcase';
-
 
 class App extends Component {
   constructor() {
@@ -55,7 +53,6 @@ class App extends Component {
         <Intro height={this.state.height} />
         <Showcase />
         <Outro height={this.state.height} />
-        <Footer />
       </div>
     );
   }

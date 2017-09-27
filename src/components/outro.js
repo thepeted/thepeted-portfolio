@@ -3,15 +3,15 @@ import Social from '../components/fa-icon';
 
 import data from '../data/social-data';
 
-import {FOOTER_HEIGHT} from '../constants/constants';
+import { MIN_HEIGHT } from '../constants/constants';
 
 const Outro = ({ height }) => (
   <div 
   className="content outro" 
   id="Get-In-Touch" 
-  style={{height: height - FOOTER_HEIGHT }}
+  style={{ height, minHeight: MIN_HEIGHT }}
   >
-    <div>
+    <div style={{marginBottom: 'auto', marginTop: 'auto'}}>
       <h2>Thanks for stopping by. Keep in touch!</h2>
       <div className="social">
         {
@@ -27,6 +27,7 @@ const Outro = ({ height }) => (
         }
       </div>
     </div>
+    <footer>View the source on <a href="https://github.com/thepeted/thepeted-portfolio">Github.</a></footer>    
   </div>
 );
 
