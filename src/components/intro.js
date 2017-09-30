@@ -5,10 +5,10 @@ import { MIN_HEIGHT, SCROLL_SPEED }from '../constants/constants'
 const Intro = ({ height }) => (
   <div className="content intro" style={{ height, minHeight: MIN_HEIGHT + 'px' }}>
     <div>
-      <h1>Hello. My name is Peter Daily and I'm a new web developer.</h1>
-      <p>I've recently found a passion for front end web development. I'm learning HTML5, CSS3 and JavaScript by making single page web apps.</p>
+      <h1>Hello! I'm Peter Daily, a web developer based in Manchester, UK.</h1>
+      <p>I'm passionate about creating beautiful and functional user interfaces. I usually work with JavaScript, React and Sass but picking up something new isn't a problem. </p>
       <p>
-        Here are some of my favourite creations (so far..) <span className='button' onClick={() => scrollToElement('#work', { duration: SCROLL_SPEED })}>Go</span>
+        I like to be creative and work on fun projects in my spare time - here are some of my favourites. <span className='button' onClick={() => scrollToElement('#work', { duration: SCROLL_SPEED })}>Go</span>
       </p>
     </div>
   </div>
