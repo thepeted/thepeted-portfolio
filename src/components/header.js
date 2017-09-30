@@ -18,7 +18,7 @@ export default ({ showHomeButton }) => {
         </span>
         <div>
           <span className="button">
-            <a href='//drive.google.com/file/d/0B6imXc7m6sp6RGwzY1FudXJjXzg/view?usp=sharing'>CV</a>
+            <a href='//drive.google.com/file/d/0B6imXc7m6sp6RWlHU0J0WkZCVWs/view?usp=sharing'>CV</a>
           </span>
           <span 
             className='button' 
