@@ -9,9 +9,9 @@ const Outro = ({ height }) => (
   <div 
   className="content outro" 
   id="Get-In-Touch" 
-  style={{ height, minHeight: MIN_HEIGHT }}
+  style={window.innerWidth >= 600 ? { height, minHeight: MIN_HEIGHT } : {}}
   >
-    <div style={{marginBottom: 'auto', marginTop: 'auto'}}>
+    <div>
       <h2>Thanks for stopping by. Keep in touch!</h2>
       <div className="social">
         {
@@ -27,7 +27,7 @@ const Outro = ({ height }) => (
         }
       </div>
     </div>
-    <footer>View the source on <a href="https://github.com/thepeted/thepeted-portfolio">Github.</a></footer>    
+    <footer>View the source on <a href="https://github.com/thepeted/thepeted-portfolio">Github</a></footer>    
   </div>
 );
 
