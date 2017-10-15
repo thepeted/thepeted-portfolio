@@ -1,8 +1,8 @@
-require('./styles/main.sass') // root stylesheeet - .css, .scss or .sass
+import React from "react"
+import ReactDOM from "react-dom"
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+import App from "./containers/app"
 
-import App from './containers/app';
+require("./styles/main.sass") // root stylesheeet - .css, .scss or .sass
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+ReactDOM.render(<App />, document.querySelector(".container"))
