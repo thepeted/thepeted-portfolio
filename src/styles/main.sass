@@ -6,6 +6,7 @@ $primary-text: #384149
 $accent-text: #0A508E
 
 $max-content-width: 950px;
+$max-showcase-content-width: 1280px;
 $header-height: 4.5em
 
 
@@ -110,8 +111,8 @@ header
     display: flex
     justify-content: space-between
     margin: 1em auto
-    padding: 0 1em
-    max-width: $max-content-width
+    padding: 0 3em
+    max-width: $max-showcase-content-width
   .codepen
     width: 60%
     iframe
@@ -202,6 +203,8 @@ footer
   .showcase
     .main
       flex-direction: column
+      padding: 0 1em
+
     .codepen
       width: 100%
     .description
