@@ -22,7 +22,7 @@ const common = {
   },
   output: {
     path: PATHS.build,
-    filename: "bundle.js"
+    filename: "bundle.[hash].js"
   },
   plugins: [
     // generates an index.html including a <script> for the generated bundle and
@@ -103,7 +103,7 @@ if (TARGET === "build") {
     },
     plugins: [
       // Extracts our generated css to a file in /build
-      new ExtractTextPlugin("styles.css"),
+      new ExtractTextPlugin("styles.[hash].css"),
       // CleanWebpackPlugin deletes any files in /build before creating a new build
       new CleanWebpackPlugin([PATHS.build]),
       new webpack.DefinePlugin({
