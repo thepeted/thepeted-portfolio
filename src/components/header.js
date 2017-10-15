@@ -1,33 +1,49 @@
-import React from 'react';
+import React from "react"
+import PropTypes from "prop-types"
 
-import classNames from 'classnames'
-import scrollToElement from 'scroll-to-element'
+import classNames from "classnames"
+import scrollToElement from "scroll-to-element"
 
-import { SCROLL_SPEED } from '../constants/constants'
+import { SCROLL_SPEED } from "../constants/constants"
 
-export default ({ showHomeButton }) => {
-  const homeButtonClassNames = classNames('button', 'home-link', { hidden: !showHomeButton })  
+const Header = ({ showHomeButton }) => {
+  const homeButtonClassNames = classNames("home-link", {
+    hidden: !showHomeButton
+  })
   return (
     <header>
-      <div className='nav'>
-        <span 
+      <div className="nav">
+        <button
           className={homeButtonClassNames}
-          onClick={() => scrollToElement('.container', { duration: SCROLL_SPEED })}
-          >
-          <i className="fa fa-lg fa-home" aria-hidden="true"></i>
-        </span>
+          onClick={() =>
+            scrollToElement(".container", { duration: SCROLL_SPEED })}
+        >
+          <i className="fa fa-lg fa-home" aria-hidden="true" />
+        </button>
         <div>
-          <span className="button">
-            <a href='//drive.google.com/file/d/0B6imXc7m6sp6RWlHU0J0WkZCVWs/view?usp=sharing' target='_blank'>CV</a>
-          </span>
-          <span 
-            className='button' 
-            onClick={()=> scrollToElement('#Get-In-Touch', { duration: SCROLL_SPEED })}
-            >
+          <button
+            onClick={() =>
+              window.open(
+                "//drive.google.com/file/d/0B6imXc7m6sp6RWlHU0J0WkZCVWs/view?usp=sharing",
+                "_blank"
+              )}
+          >
+            CV
+          </button>
+          <button
+            onClick={() =>
+              scrollToElement("#Get-In-Touch", { duration: SCROLL_SPEED })}
+          >
             Contact Me
-          </span>
+          </button>
         </div>
       </div>
     </header>
   )
 }
+
+Header.propTypes = {
+  showHomeButton: PropTypes.bool.isRequired
+}
+
+export default Header

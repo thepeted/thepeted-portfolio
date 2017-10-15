@@ -1,7 +1,15 @@
-import React from 'react';
+import React from "react"
+import PropTypes from "prop-types"
 
-export default ({faClass, link}) => {
-  return (
-    <a href={link} target="_blank"><i className={`fa ${faClass} fa-3x`}></i></a>
-  )
+const FaIcon = ({ faClass, link }) => (
+  <a href={link} target="_blank">
+    <i className={`fa ${faClass} fa-3x`} />
+  </a>
+)
+
+FaIcon.propTypes = {
+  faClass: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 }
+
+export default FaIcon

@@ -20,7 +20,9 @@ p
   line-height: 1.5
   padding: 1em 0 1em 0
 
-.button
+button
+  border: none
+  outline: none
   display: inline-block
   padding: 0.3em 0.7em
   font-weight: 400
@@ -34,7 +36,7 @@ p
   a
     color: #fff
   
-.button + .button
+button + button
   margin-left: 0.4em
   
 header
@@ -63,7 +65,7 @@ header
   & > div
     max-width: 950px
     margin: 0 auto
-  .button
+  button
     font-size: 0.8em
 
 .home-link
@@ -177,7 +179,7 @@ footer
     font-size: 1em
     margin-top: $header-height
     margin-bottom: $header-height
-    .button.go
+    button.go
       display: none
   .outro
     font-size: 1em
