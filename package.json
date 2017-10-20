@@ -48,6 +48,7 @@
     "webpack-merge": "^0.10.0"
   },
   "dependencies": {
+    "better-react-spinkit": "^2.0.2",
     "classnames": "^2.2.5",
     "lodash.throttle": "^4.1.1",
     "prop-types": "^15.6.0",
