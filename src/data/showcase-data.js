@@ -25,7 +25,7 @@ export default [
   },
   {
     description:
-      'Created with React and Redux, The Grid is a fully functional multi-level 2D Dungeon Crawler with randomly generated maps and entities.  The UI features keyboard controls, a responsive viewport that tracks the player position, a "fog mode" and messaging / scoreboard. Writing this app taught me lots about functional programming and creating organised code. Give it a go - the game is challenging but winnable!',
+      'Created with React and Redux, The Grid is a challenging but winnable multi-level Dungeon Crawler with randomly generated maps and entities.  The UI features keyboard controls, a responsive viewport that tracks the player position, a "fog mode", status updates and a scoreboard.  Writing this app taught me lots about functional programming and creating organised code. The Grid was a <a href="http://codepen.io">Codepen</a> pick and has helped others to learn Redux',
     hash: "aNrdzP",
     height: 620,
     title: "Dungeon Crawler",
@@ -33,7 +33,7 @@ export default [
   },
   {
     description:
-      'If you&#8217;re not familiar with the Game of Life, it&#8217;s a cellular automation devised by British mathematician John Conway (you can read more about it on <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>).  This is an interactive version built with React.js and Redux with a simple UI that allows the user to add, remove or randomise the cells and see the effects on the evolution of the cells over time.  This was my first (and only!) demo to get picked on <a href="http://codepen.io">Codepen</a>.  I liked the color scheme and UI elements I created so much that I decided to use them on this website!',
+      'If you&#8217;re not familiar with the Game of Life, it&#8217;s a cellular automation devised by British mathematician John Conway (you can read more about it on <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>).  This is an interactive version built with React.js and Redux with a simple UI that allows the user to add, remove or randomise the cells and see the effects on the evolution of the cells over time.  This was my first demo to get picked on <a href="http://codepen.io">Codepen</a>.  I liked the color scheme and UI elements worked well and I chose to use them for my portfolio too',
     hash: "bpovxz",
     height: 620,
     title: "Game of Life",
