@@ -16,7 +16,15 @@ class CodePen extends Component {
     const iFrameHeight = this.props.height
     const top = iFrameHeight / 2 - loaderHeight / 2
     return (
-      <div style={{ position: "absolute", top, left: "50%" }}>
+      <div
+        style={{
+          position: "absolute",
+          top,
+          width: "100%",
+          display: "flex",
+          justifyContent: "center"
+        }}
+      >
         <RotatingPlane size={loaderHeight} color="#db4500" duration="1s" />
       </div>
     )
