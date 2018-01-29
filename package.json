@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "deploy": "gh-pages -d build -a"
+    "deploy": "echo peterdaily.me >> build/CNAME && gh-pages -d build"
   },
   "repository": {
     "type": "git",
