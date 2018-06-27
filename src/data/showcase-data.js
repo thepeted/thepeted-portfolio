@@ -17,6 +17,14 @@ export default [
   },
   {
     description:
+      'I fell in love with <a href="https://dribbble.com/shots/3169399-Drummy-Drum-Machine-for-Mac">this</a> dribble shot so I decided to make it. It only seems to work close to OK in Chrome at the moment. We&#8217;re playing uncompressed wavs via the media element, so it&#8217;s kinda impressive it works at all.  Ripe for optimisation soon.',
+    hash: "deKPgW",
+    height: 580,
+    title: "Drummy Drum Machine",
+    fullWidth: true
+  },
+  {
+    description:
       'I love writing HTML and CSS to recreate some of the amazing UI designs created by the community over at <a href="https://dribbble.com/">dribbble.com</a>. I couldn&#8217;t resist bringing this <a href="https://dribbble.com/shots/1009776-Calculator-for-Smartisan-OS"> gorgeous calculator design</a> to life.  My aim was for the same functionality as my trusty pocket calculator, complete with memory functions - although sadly it is not solar powered (yet).',
     hash: "avLwNw",
     height: 480,
@@ -45,22 +53,6 @@ export default [
     hash: "ojVYoO",
     height: 550,
     title: "Simon Game",
-    fullWidth: false
-  },
-  {
-    description:
-      'My old portfolio showing my progress through the original <a href="http://freecodecamp.com">FreeCodeCamp</a> curriculum. Bootstrap is a fantastic framework for quickly making robust, mobile first interfaces.  I  <a href="http://codepen.io/thepeted/pen/ojvjbL">customised</a> the Bootstrap Thumbnail component and implemented a random pastel color placeholder using <a href="http://holderjs.com">Holder.js</a> to brighten up those pesky "coming soon" items.',
-    hash: "LpPWWQ",
-    height: 470,
-    title: "Bootstrap Portfolio",
-    fullWidth: false
-  },
-  {
-    description:
-      'I&#8217;m working through the list of <a href="http://www.dailyui.co/">Daily UIs</a> to improve my Front End skills and raise my awareness of the techniques and issues faced when creating common UI elements.  First up is a Sign Up Modal with a Material Design flavour and simple &#8217;show passowrd&#8217; functionality.',
-    hash: "pbgreO",
-    height: 490,
-    title: "Sign Up Modal",
     fullWidth: false
   },
   {
