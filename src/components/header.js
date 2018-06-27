@@ -24,7 +24,7 @@ const Header = ({ showHomeButton }) => {
           <button
             onClick={() =>
               window.open(
-                "//drive.google.com/file/d/0B6imXc7m6sp6RWlHU0J0WkZCVWs/view?usp=sharing",
+                "//drive.google.com/file/d/1Tcm6iI_EAuXrLz0Ofr4S9yAyDNGkhGdy/view?usp=sharing",
                 "_blank"
               )}
           >
